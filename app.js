@@ -94,7 +94,7 @@ app.get('/', (req, res) => {
   res.status(200).json({message: 'Server is up and running!'});
 });
 
-app.post("/checkFace", async (req, res) => {
+app.post("/check-face", async (req, res) => {
   try {
     const file1 = req.files.File1?.tempFilePath;
 
