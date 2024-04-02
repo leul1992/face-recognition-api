@@ -90,6 +90,10 @@ async function getDescriptorsFromDB(image) {
   }
 }
 
+app.get('/', (req, res) => {
+  res.status(200).json({message: 'Server is up and running!'});
+});
+
 app.post("/check-face", async (req, res) => {
   try {
     const file1 = req.files.File1?.tempFilePath;
